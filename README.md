@@ -4,6 +4,15 @@
 
 KeyPoints: Cascade RCNN - Megengine, Cascade Mask RCNN(only training part) - Megengine
 
+实现了（参考MMDetection）
+
+- Cascade RCNN
+- Cascade Mask RCNN
+- ResNeSt
+- PVT V2
+- HRNet
+- res2net
+
 ## 方案概述
 
 参考[第一阶段训练](./configs/cascade_rcnn_renest101_1200size_trafficdet.py)和[第二阶段训练](./configs/cascade_rcnn_renest101_1200size_finetuning_trafficdet.py)。
@@ -11,6 +20,12 @@ KeyPoints: Cascade RCNN - Megengine, Cascade Mask RCNN(only training part) - Meg
 在第一阶段训练至第15个epoch后，使用其参数开始第二阶段训练。
 
 我们只训练了Cascade RCNN。实现的Cascade Mask RCNN（仅训练部分，不输出mask的推理结果）来不及训练测试，不过还是开源出来。
+
+### 最后的模型权重
+
+阿里云盘：https://www.aliyundrive.com/s/vL2otWEzhkw
+
+下载后把文件名改成epoch_29.pkl，放在```./configs/cascade_rcnn_renest101_1200size_finetuning_trafficdet_gpus2/```
 
 ### 输入尺寸
 
