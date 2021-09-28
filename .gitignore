@@ -1,0 +1,6 @@
+logs/
+__pycache__
+*.pyc
+.vscode
+pretrained_weights/*.pth
+pretrained_weights/*.pkl

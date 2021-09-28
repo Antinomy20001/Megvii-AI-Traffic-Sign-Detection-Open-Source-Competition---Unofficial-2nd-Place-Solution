@@ -1,0 +1,7 @@
+pycocotools==2.0.2
+torch==1.4.0
+opencv-python-headless==4.5.3.56
+numpy==1.20.3
+megengine==1.5.0
+ensemble-boxes==1.0.7
+albumentations==1.0.3
