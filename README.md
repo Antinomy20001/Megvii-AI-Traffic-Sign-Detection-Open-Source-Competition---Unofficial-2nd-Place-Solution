@@ -69,11 +69,13 @@ pip3 install opencv-python-headless -y
 
 bash download_pretrained_weights.sh
 
-PYTHONPATH=`pwd`:$PYTHONPATH python3 tools/train.py -n 2 -b 1 -f configs/cascade_rcnn_renest101_1200size_trafficdet.py -d /path/to/dataset/
+# -sl是我们自己加的参数，控制sublinear的阈值
+
+PYTHONPATH=`pwd`:$PYTHONPATH python3 tools/train.py -n 2 -b 1 -f configs/cascade_rcnn_renest101_1200size_trafficdet.py -d /path/to/dataset/ -sl 8
 
 # 等训练出epoch_15.pkl...
 
-PYTHONPATH=`pwd`:$PYTHONPATH python3 tools/train.py -n 2 -b 1 -f configs/cascade_rcnn_renest101_1200size_finetuning_trafficdet.py -d /path/to/dataset/ -w logs/cascade_rcnn_renest101_1200size_trafficdet_gpus2/epoch_15.pkl
+PYTHONPATH=`pwd`:$PYTHONPATH python3 tools/train.py -n 2 -b 1 -f configs/cascade_rcnn_renest101_1200size_finetuning_trafficdet.py -d /path/to/dataset/ -w logs/cascade_rcnn_renest101_1200size_trafficdet_gpus2/epoch_15.pkl -sl 8
 
 # validate
 PYTHONPATH=`pwd`:$PYTHONPATH python3 tools/test_self_ensemble.py -n 2 -se 29 -f configs/cascade_rcnn_renest101_1200size_finetuning_trafficdet.py -d /path/to/dataset/
