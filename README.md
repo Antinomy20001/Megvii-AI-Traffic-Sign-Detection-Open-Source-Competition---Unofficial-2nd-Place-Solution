@@ -1,6 +1,6 @@
 # Megvii AI Traffic Sign Detection Open Source Competition - Unofficial *2nd Place Solution
 
-旷视AI智慧交通开源赛道 初赛第二名，决赛**非正式**<del>第二名</del>**（仅测试集评分）**解决方案（初赛/决赛， 0.61447/0.58183）
+旷视AI智慧交通开源赛道 电子科技大学-[Diggers团队](https://diggers.ai) 初赛第二名，决赛**非正式**<del>第二名</del> **（仅测试集评分）** 解决方案（初赛/决赛， 0.61447/0.58183）
 
 KeyPoints: Cascade RCNN - Megengine, Cascade Mask RCNN(only training part) - Megengine
 
