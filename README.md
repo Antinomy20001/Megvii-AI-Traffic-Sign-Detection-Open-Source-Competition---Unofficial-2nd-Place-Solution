@@ -47,7 +47,7 @@ ResNeSt 101, FPN, RPN, Cascade RCNN
 ```bash
 # cd to this project's folder
 
-pip3 install requirements.txt
+pip3 install -r requirements.txt
 pip3 uninstall opencv-python -y
 pip3 uninstall opencv-python-headless -y
 pip3 install opencv-python-headless -y
