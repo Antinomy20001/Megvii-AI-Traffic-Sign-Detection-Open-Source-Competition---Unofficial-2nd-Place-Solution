@@ -84,6 +84,8 @@ PYTHONPATH=`pwd`:$PYTHONPATH python3 tools/test_final_self_ensemble.py -n 2 -se 
 
 注意里面的torch只用来转换权重，任何版本都可以。此外可能需要手动卸载完opencv-python一下opencv-python-headless。
 
+目录下有一个clear.py，是用来清理杀不掉的megengine进程的。
+
 ## 备注
 
 我们修改了原来demo代码的非常多的部分，因此可能不能只复制网络本身的文件。具体可见代码。
