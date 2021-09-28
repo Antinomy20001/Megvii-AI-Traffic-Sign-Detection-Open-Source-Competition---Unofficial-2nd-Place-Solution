@@ -25,7 +25,7 @@ KeyPoints: Cascade RCNN - Megengine, Cascade Mask RCNN(only training part) - Meg
 
 阿里云盘：https://www.aliyundrive.com/s/vL2otWEzhkw
 
-下载后把文件名改成epoch_29.pkl，放在```./configs/cascade_rcnn_renest101_1200size_finetuning_trafficdet_gpus2/```
+下载后把文件名改成epoch_29.pkl，放在```./logs/cascade_rcnn_renest101_1200size_finetuning_trafficdet_gpus2/```
 
 ### 输入尺寸
 
