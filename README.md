@@ -6,12 +6,12 @@ KeyPoints: Cascade RCNN - Megengine, Cascade Mask RCNN(only training part) - Meg
 
 实现了（参考MMDetection）
 
-- Cascade RCNN
-- Cascade Mask RCNN
-- ResNeSt
-- PVT V2
-- HRNet
-- res2net
+- [Cascade RCNN](./models/resnest_cascade_rcnn.py)
+- [Cascade Mask RCNN](./models/resnest_cascade_mask_rcnn.py
+- [ResNeSt](./models/resnest_mge.py)
+- [PVT V2](./models/pvt_mge.py)
+- [HRNet](./models/hrnet_mge.py)
+- [res2net](./models/res2net.py)
 
 ## 方案概述
 
